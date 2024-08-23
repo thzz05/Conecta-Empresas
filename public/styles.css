@@ -210,4 +210,44 @@ button.create-account:hover {
   .btn-custom:hover {
     background: #243de0; /* Azul ainda mais escuro ao passar o mouse */
   }
-  
+
+  /* botão de controle do carrossel index.html */
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #90979F; /* Cor de fundo dos ícones dos botões de controle */
+    width: 30px; /* Largura dos ícones */
+    height: 30px; /* Altura dos ícones */
+    background-size: 50% 50%; /* Ajusta o tamanho dos ícones */
+    border-radius: 50%; /* Faz os ícones ficarem redondos */
+}
+
+/* Redefine o tamanho dos ícones dos botões de controle */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 25px !important; /* Ajuste a largura conforme necessário */
+    height: 25px !important; /* Ajuste a altura conforme necessário */
+    background-size: 100% 100% !important; /* Ajusta o tamanho dos ícones dentro do botão */
+}
+
+/* Redefine o tamanho dos botões de controle */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px !important; /* Ajuste a largura do botão de controle conforme necessário */
+    height: 40px !important; /* Ajuste a altura do botão de controle conforme necessário */
+    background-color: #90979F !important; /* Ajuste a cor de fundo se necessário */
+}
+
+/* Ajusta o tamanho dos ícones de controle dentro dos botões */
+.carousel-control-prev-icon {
+    background-image: none !important; /* Remove a imagem padrão, se necessário */
+}
+
+.carousel-control-next-icon {
+    background-image: none !important; /* Remove a imagem padrão, se necessário */
+}
+
+/* Ajusta a visibilidade e alinhamento do texto dentro dos botões */
+.carousel-control-prev span,
+.carousel-control-next span {
+    display: none !important;
+}

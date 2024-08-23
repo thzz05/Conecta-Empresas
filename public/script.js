@@ -57,7 +57,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     .then(data => {
         if (data.success) {
             // Redirecionar para uma página de sucesso
-            window.location.href = '/dashboard.html';
+            window.location.replace('/index.html')
         } else {
             // Exibir mensagem de erro
             alert(data.message);
