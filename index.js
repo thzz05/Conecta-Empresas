@@ -75,7 +75,7 @@ app.post('/login', (req, res) => {
 
                 if (result) {
                     // Redirecionar para a página index.html após login bem-sucedido
-                    res.redirect('/index.html');
+                    res.redirect('/logado.html');
                 } else {
                     res.json({ success: false, message: 'Senha incorreta.' });
                 }
