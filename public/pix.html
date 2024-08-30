@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Pagamento</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .social-icons a {
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+        }
+
+        .btn-custom {
+            background-color: #90979F;
+            /* Cor dos botões "Comprar Agora" */
+            border-color: #90979F;
+            /* Cor da borda dos botões "Comprar Agora" */
+        }
+
+        .btn-custom:hover {
+            background-color: #7a7f87;
+            /* Cor de fundo dos botões "Comprar Agora" ao passar o mouse */
+            border-color: #7a7f87;
+            /* Cor da borda dos botões "Comprar Agora" ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h3 class="pix-form mt-4">Método de pagamento</h3>
+            <div class="payment-methods d-flex justify-content-center">
+                <button class="btn btn-light active">
+                    <img src="img/pix.png" alt="PIX">
+                    <p>Chave Pix: xxx.xxx.xxx-xx</p>
+                </button>
+            </div>
+
+            <div class="pix-form mt-4">
+                <h4>Pagamento via PIX</h4>
+                <div class="mt-4">
+                </div>
+                <button id="generate-qr" class="w-100 btn btn-lg btn-custom">Gerar QR Code</button>
+                <div class="qr-code-box mt-4" id="qr-code-box">
+                    <!-- QR Code será gerado aqui -->
+                </div>
+                <a id="whatsapp-link" class="btn btn-success mt-4" href="http://api.whatsapp.com/send?phone=5511123456779" target="_blank">Pagar via WhatsApp</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="pix.js"></script>
+</body>
+</html>

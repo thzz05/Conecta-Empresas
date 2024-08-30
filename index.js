@@ -64,7 +64,7 @@ app.post('/login', (req, res) => {
     collection.findOne({ username })
         .then(user => {
             if (!user) {
-                return res.json({ success: false, message: 'Usuário não encontrado.' });
+                return res.json({ success: false, message: 'Usuário ou senha não encontrado.' });
             }
 
             // Comparar a senha fornecida com a senha armazenada
@@ -77,7 +77,7 @@ app.post('/login', (req, res) => {
                     // Redirecionar para a página index.html após login bem-sucedido
                     res.redirect('/logado.html');
                 } else {
-                    res.json({ success: false, message: 'Senha incorreta.' });
+                    res.redirect('/error.html');
                 }
             });
         })

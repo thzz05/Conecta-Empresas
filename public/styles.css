@@ -16,7 +16,7 @@ body {
     background-size: cover;
     padding: 40px;
     border-radius: 20px;
-    color: black;
+    color: #fff;;
     text-align: center;
     position: relative; /* Necessário para o fundo translúcido */
     
@@ -250,4 +250,104 @@ button.create-account:hover {
 .carousel-control-prev span,
 .carousel-control-next span {
     display: none !important;
+}
+/* tela de pagamento */
+/* Estilo geral do corpo */
+body {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do contêiner principal */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  
+}
+
+/* Estilo do título */
+
+/* Estilo dos botões de método de pagamento */
+.payment-methods button {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    color: #495057;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.payment-methods button.active {
+    background-color: #90979F;
+    color: #fff;
+    background-color: #90979F;
+    
+}
+
+.payment-methods img {
+    width: 40px;
+    height: 40px;
+}
+
+.payment-methods p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Estilo do formulário PIX */
+.pix-form h4 {
+    
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilo do botão Gerar QR Code */
+#generate-qr {
+    width: 100%;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#generate-qr:hover {
+    background-color: #0056b3;
+    background-color: #90979F;
+}
+
+/* Estilo da caixa do QR Code */
+.qr-code-box {
+    text-align: center;
+}
+
+.qr-code-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo do link para WhatsApp */
+#whatsapp-link {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+#whatsapp-link:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Adiciona espaçamento entre os elementos */
+.mt-4 {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
 }
