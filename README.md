@@ -1,7 +1,7 @@
-![Protótipo Conecta Empresas]([https://img.shields.io/github/license/nicolasdepaulla/de_paulas_delivery](https://www.figma.com/proto/M7BWqOVoXNQ24iyHNFmGQG/Prototipo-Conecta-Empresas?node-id=1-2&node-type=CANVAS&t=Vv8Jikz88C9zWwPw-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2))
+#Protótipo Conecta Empresas: https://www.figma.com/proto/M7BWqOVoXNQ24iyHNFmGQG/Prototipo-Conecta-Empresas?node-id=1-2&node-type=CANVAS&t=Vv8Jikz88C9zWwPw-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2
 
 
-Sistema de Venda de Pacote de Dados para Consórcio.
+# Sistema de Venda de Pacote de Dados para Consórcio.
 
 
 Este projeto é um sistema de venda de pacotes de dados para consórcios, desenvolvido utilizando Node.js, Express, MongoDB, e JavaScript. Ele oferece funcionalidades para cadastro de usuários e autenticação, garantindo a segurança das informações através de criptografia de senhas.
