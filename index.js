@@ -64,7 +64,7 @@ app.post('/login', (req, res) => {
     collection.findOne({ username })
         .then(user => {
             if (!user) {
-                return res.json({ success: false, message: 'Usuário ou senha não encontrado.' });
+                return res.redirect('/error.html');
             }
 
             // Comparar a senha fornecida com a senha armazenada
